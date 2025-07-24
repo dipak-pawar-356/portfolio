@@ -1,0 +1,11 @@
+.tool-icon {
+  font-size: 3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #c4c4c4;
+}
+
+.tool-icon:hover {
+  transform: scale(1.2) rotate(5deg);
+  color: #61dafb; /* or choose another hover color */
+  cursor: pointer;
+}

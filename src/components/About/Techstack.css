@@ -1,0 +1,18 @@
+.tech-icons {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tech-icon-wrapper {
+  font-size: 3rem;
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.4s, background 0.3s, box-shadow 0.4s ease;
+  background: #1e1e2f;
+}
+
+.tech-icons:hover .tech-icon-wrapper {
+  transform: scale(1.2) rotate(5deg);
+  background: #282c34;
+  box-shadow: 0 8px 20px rgba(0, 255, 164, 0.2);
+}
