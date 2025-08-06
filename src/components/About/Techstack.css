@@ -1,4 +1,4 @@
-.tech-icons {
+/* .tech-icons {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -15,4 +15,46 @@
   transform: scale(1.2) rotate(5deg);
   background: #282c34;
   box-shadow: 0 8px 20px rgba(0, 255, 164, 0.2);
+} */
+
+
+
+
+
+
+
+
+
+
+/* Tech Icon Wrapper */
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tech-icon-wrapper {
+  font-size: 3rem;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--tech-color, #1e1e2f);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, background-color 0.3s, box-shadow 0.4s ease;
+}
+
+/* Hover Animation */
+.tech-icons:hover .tech-icon-wrapper {
+  transform: scale(1.15) rotate(6deg);
+  box-shadow: 0 10px 30px rgba(0, 255, 164, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tech-icon-wrapper {
+    font-size: 2.2rem;
+    padding: 15px;
+  }
 }

@@ -23,24 +23,25 @@ import {
 } from "react-icons/si";
 
 const skills = [
-  { icon: <DiHtml5 />, name: "HTML5" },
-  { icon: <DiCss3 />, name: "CSS3" },
-  { icon: <DiBootstrap />, name: "Bootstrap" },
-  { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-  { icon: <DiJavascript1 />, name: "JavaScript" },
-  { icon: <DiReact />, name: "React" },
-  { icon: <DiNodejs />, name: "Node.js" },
-  { icon: <SiExpress />, name: "Express.js" },
-  { icon: <DiMongodb />, name: "MongoDB" },
-  { icon: <SiMysql />, name: "MySQL" },
-  { icon: <SiFirebase />, name: "Firebase" },
-  { icon: <SiDocker />, name: "Docker" },
-  { icon: <SiKubernetes />, name: "Kubernetes" },
-  { icon: <DiGit />, name: "Git" },
-  { icon: <DiJava />, name: "Java" },
-  { icon: <SiSpringboot />, name: "Spring Boot" },
-  { icon: <DiPython />, name: "Python" },
+  { icon: <DiHtml5 />, name: "HTML5", color: "#E34F26" },
+  { icon: <DiCss3 />, name: "CSS3", color: "#1572B6" },
+  { icon: <DiBootstrap />, name: "Bootstrap", color: "#7952B3" },
+  { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "#38B2AC" },
+  { icon: <DiJavascript1 />, name: "JavaScript", color: "#F7DF1E" },
+  { icon: <DiReact />, name: "React", color: "#61DAFB" },
+  { icon: <DiNodejs />, name: "Node.js", color: "#339933" },
+  { icon: <SiExpress />, name: "Express.js", color: "#000000" },
+  { icon: <DiMongodb />, name: "MongoDB", color: "#47A248" },
+  { icon: <SiMysql />, name: "MySQL", color: "#00758F" },
+  { icon: <SiFirebase />, name: "Firebase", color: "#FFCA28" },
+  { icon: <SiDocker />, name: "Docker", color: "#2496ED" },
+  { icon: <SiKubernetes />, name: "Kubernetes", color: "#326CE5" },
+  { icon: <DiGit />, name: "Git", color: "#F05032" },
+  { icon: <DiJava />, name: "Java", color: "#007396" },
+  { icon: <SiSpringboot />, name: "Spring Boot", color: "#6DB33F" },
+  { icon: <DiPython />, name: "Python", color: "#3776AB" },
 ];
+
 
 function Techstack() {
   return (
@@ -56,8 +57,9 @@ function Techstack() {
             placement="top"
             overlay={<Tooltip id={`tooltip-${index}`}>{skill.name}</Tooltip>}
           >
-            <div className="tech-icon-wrapper">
+            <div className="tech-icon-wrapper" style={{ backgroundColor: skill.color }}>
               {skill.icon}
+              
             </div>
           </OverlayTrigger>
         </Col>

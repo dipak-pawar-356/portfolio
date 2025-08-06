@@ -1,11 +1,33 @@
-.tool-icon {
-  font-size: 3rem;
-  transition: transform 0.3s ease, color 0.3s ease;
-  color: #c4c4c4;
+/* Wrapper for each tech icon */
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-.tool-icon:hover {
-  transform: scale(1.2) rotate(5deg);
-  color: #61dafb; /* or choose another hover color */
-  cursor: pointer;
+/* The inner box with background color */
+.tech-icon-wrapper {
+  font-size: 3rem;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--tech-color, #1e1e2f);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, background-color 0.3s, box-shadow 0.4s ease;
+}
+
+/* Hover effect with smooth scale, rotate, and glow */
+.tech-icons:hover .tech-icon-wrapper {
+  transform: scale(1.15) rotate(6deg);
+  box-shadow: 0 10px 30px rgba(0, 255, 164, 0.4);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .tech-icon-wrapper {
+    font-size: 2.2rem;
+    padding: 15px;
+  }
 }

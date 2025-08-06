@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --nav-bg: --text-color;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1b1429;
+  --text-color: #ffffff;
+  --nav-bg: #2a223d;
+}
 body {
   margin: 0;
   font-family: "Raleway", serif !important;
