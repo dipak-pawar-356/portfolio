@@ -1,0 +1,119 @@
+.certificate-section {
+  padding: 40px 0 40px 0;
+  background: linear-gradient(145deg, #1e1e2f, #111123);
+  min-height: 60vh;
+  margin-top: 80px; /* Space below navbar */
+}
+.certificate-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #ffd700;
+}
+.certificate-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+  align-items: stretch;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.certificate-card {
+  background: linear-gradient(145deg, #1e1e2f, #111123);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 28px 20px 20px 20px;
+  max-width: 340px;
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.certificate-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 32px #ffd70055;
+  border: 2px solid #ffd700;
+}
+.certificate-img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 2px solid #ffd700;
+  box-shadow: 0 2px 12px #ffd70033;
+}
+.certificate-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.35rem;
+  color: #ffd700;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px #ffd70033;
+}
+.certificate-info p {
+  margin: 0 0 4px 0;
+  color: #bdbdbd;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.certificate-info span {
+  font-size: 1rem;
+  color: #90caf9;
+  font-weight: 500;
+}
+.certificate-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffd700;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.08rem;
+  transition: color 0.2s, transform 0.2s;
+  box-shadow: none;
+}
+.purple {
+  color: #a259ff;
+  color: #a259ff;
+  transform: scale(1.1);
+}
+.certificate-img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.certificate-name {
+  font-size: 1.35rem;
+  color: #ffd700;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px #ffd70033;
+}
+.certificate-issuer {
+  color: #bdbdbd;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.certificate-date {
+  font-size: 1rem;
+  color: #90caf9;
+  font-weight: 500;
+}
+.certificate-glow {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffd700 0%, #a259ff 100%);
+  filter: blur(18px);
+  z-index: 0;
+}

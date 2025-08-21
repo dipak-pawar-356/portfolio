@@ -36,11 +36,11 @@ function Home2() {
               <b className="purple">Chakravyuh 1.0 (IEEE Bombay Section)</b> and founder of the{" "}
               <b className="purple">ThinkXLogic Club</b>.
               <br />
-              <br />
+              {/* <br />
               My work revolves around building smart solutions in{" "}
               <b className="purple">AgriTech, Smart Mobility</b> (like Smart Bus Tracking System), and{" "}
               <b className="purple">AI-powered platforms</b> like SmartLearn and Project Drishti.
-              <br />
+              <br /> */}
               <br />
               I love contributing to open source and experimenting with tools like{" "}
               <b className="purple">Vertex AI, Firebase, MongoDB, Docker</b>, and cloud-based deployment.
@@ -75,7 +75,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/"
+                  href="https://x.com/DipakPa61805649"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

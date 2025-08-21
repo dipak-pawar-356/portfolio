@@ -89,7 +89,7 @@ export default function Projects() {
         );
 
   return (
-    <Container fluid className="project-section py-5" style={{ backgroundColor: "#0d1117" }}>
+    <Container fluid className="project-section py-5" style={{ backgroundColor: "#0d1117", marginTop: '80px' }}>
       <Particle />
       <Container>
         <h1 className="project-heading text-center mb-3">
@@ -197,6 +197,8 @@ export default function Projects() {
           transform: translateY(-5px);
         }
       `}</style>
+    {/* Certificate Section */}
+  
     </Container>
   );
 }
